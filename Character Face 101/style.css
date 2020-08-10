@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  background-color: #733a5d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.hair {
+  width: 24rem;
+  height: 12rem;
+  background-color: #002337;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  position: relative;
+  top: 4rem;
+}
+
+.hair__shadow {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 10rem;
+  height: 5rem;
+  background-color: #333e50;
+  border-top-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.hair::before,
+.hair::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  background-color: #333e50;
+}
+
+.hair::before {
+  top: 12rem;
+  left: 0;
+  height: 7rem;
+  z-index: -10;
+}
+
+.hair::after {
+  top: 7rem;
+  right: 0;
+  height: 12rem;
+  z-index: -10;
+}
+
+.face {
+  width: 21rem;
+  height: 23.25rem;
+  background-color: #f8c09d;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+  z-index: -10;
+}
+
+.eyebrows {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5rem;
+  display: flex;
+  width: 15rem;
+  justify-content: space-around;
+}
+
+.eyebrow {
+  width: 4rem;
+  height: 1.75rem;
+  background-color: #002337;
+  border-radius: 100vh;
+  box-shadow: 0 1rem 0 0 #eb957c;
+}
+
+.eyes {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8.5rem;
+  width: 15rem;
+  justify-content: space-around;
+}
+
+.eye {
+  width: 2rem;
+  height: 3.5rem;
+  border-radius: 100vh;
+  background-color: #002337;
+}
+
+.ears {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9.25rem;
+  display: flex;
+  width: 27.8rem;
+  justify-content: space-between;
+  z-index: -200;
+}
+
+.ear {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #f19580;
+}
+
+.ear--left {
+  clip-path: circle(50% at 100% 50%);
+}
+
+.ear--right {
+  clip-path: circle(50% at 0 50%);
+}
+
+.nose {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13rem;
+  display: flex;
+  width: 5rem;
+  justify-content: space-around;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100vh;
+  background-color: #eb957c;
+}
+
+.mouth {
+  position: absolute;
+  left: 50%;
+  top: 15.5rem;
+  transform: translateX(-50%);
+}
+
+.mouth--circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: #fff;
+  clip-path: circle(50% at 50% 0);
+}
